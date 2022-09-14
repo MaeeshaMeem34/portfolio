@@ -5,6 +5,7 @@ import "./index.scss"
 import {Link} from 'react-router-dom'
 import Sidebar from "../Sidebar"
 import Logo from "./Logo"
+import Loader from "react-loaders"
 
 const Home=()=>{
 
@@ -36,8 +37,8 @@ useEffect(()=>{
 
     return( 
         <> 
-         <Sidebar/>
          
+         <Sidebar />
 
     <div className="container home-page">
     
@@ -61,6 +62,8 @@ useEffect(()=>{
         <Logo/>
 
     </div>
+
+    <Loader type="pacman" />
     </>
     );
 }

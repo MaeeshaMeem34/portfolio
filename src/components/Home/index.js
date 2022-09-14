@@ -4,6 +4,7 @@ import AnimatedLetters from "../AnimatedLetters"
 import "./index.scss"
 import {Link} from 'react-router-dom'
 import Sidebar from "../Sidebar"
+import Logo from "./Logo"
 
 const Home=()=>{
 
@@ -36,8 +37,10 @@ useEffect(()=>{
     return( 
         <> 
          <Sidebar/>
+         
 
     <div className="container home-page">
+    
 
         <div className="text-zone">
             <h1>
@@ -55,6 +58,7 @@ useEffect(()=>{
              <h2> Frontend Devloper / Javascript Expert/ Lecturer </h2>
              <Link to='/contact' className="flat-button"> Contact ME</Link>
         </div>
+        <Logo/>
 
     </div>
     </>

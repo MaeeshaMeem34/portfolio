@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import Sidebar from "../Sidebar"
 import Logo from "./Logo"
 import Loader from "react-loaders"
+import { Skills } from "../Skill"
 
 const Home=()=>{
 
@@ -60,6 +61,8 @@ useEffect(()=>{
              <Link to='/contact' className="flat-button"> Contact ME</Link>
         </div>
         <Logo/>
+
+      
 
     </div>
 
